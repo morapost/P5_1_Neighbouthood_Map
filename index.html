@@ -5,15 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Bhushan Manoharan">
-<title>Map Project Demo</title>
+<title>Namma Bengaluru</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div id="map"></div>
 <div id="area">
-			<input id="searchbox" placeholder="Search.." type="search" data-bind="textInput: filter, valueUpdate: 'keyup'"></input>
-			<ul id="locations-list" data-bind="foreach: places, foreach: search()">
-				<li id="list-item" data-bind="text: title, click: $parent.setLocation"></li>
+			<input id="searchList" placeholder="Search.." type="search" data-bind="textInput: filter, valueUpdate: 'keyup'"></input>
+			<ul id="locations" data-bind="foreach: places, foreach: search()">
+				<li id="list-item" data-bind="text: title, click: $parent.toggleMarker"></li>
 			</ul>
 		</div>
 
